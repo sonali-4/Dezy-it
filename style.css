@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background:#302B70; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+.logo  img{
+width: 7%;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+ margin-right: 3rem;
+  
+}
+nav ul li a{
+  color: #ffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  font-family: spinnaker,sans-serif;
+
+ 
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #f1A042;
+
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+
+
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+ 
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color:#f1A042;
+  }
+  
+}
+.header {
+	padding-top: 8rem;
+	padding-bottom: 9rem;
+	background-image:url("background.webp");
+  background-size:cover;
+	text-align: center;
+}
+
+.header h2 {
+	margin-bottom: 1.25rem;
+  color:#fff;
+}
+
+
+
+
+
+.header .p-large {
+	margin-bottom: 2.75rem;
+  color:#fff;
+}
+
+.header .btn-solid-lg {
+	display: block;
+	margin-bottom: 1.75rem;
+}
+
+.header .text-container {
+	margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+
+	/* Header */
+	.header {
+		padding-top: 9rem;
+	}
+
+	.header .h1-large {
+		font-size: 3.75rem;
+		line-height: 4.625rem;
+  }
+  .text-container h2{
+    color:#302b70;
+    font-size:50px;
+    font-family:sans-serif;
+    font-weight: 400;
+  }
+  .text-container p{
+    font-size:17px;
+    font-weight: 200;
+    padding-top: 4%;
+  }
+  .content h1{
+    text-align:center;
+    color:#fff;
+    font-size: 50px;
+    padding-top:4%;
+  
+  }
+  .content p{
+    font-size:15px;
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    
+  }
+  .product-img img{
+    margin-left:5rem;
+  }
+  .text-1 h2{
+     color:#302b70;
+     
+     font-size: 28px;
+     padding-top: 11%;
+  }
+.line{
+  border-bottom: 3px solid #5f59ab;
+  margin: 0 0 18px;
+
+}
+.text-1 p{
+  font-size:15px;
+  padding-top:3%;
+  font-weight: 200;
+  color:#111;
+}
+
+.container{
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.container .box{
+  
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  border-radius: 5px;
+  width:298px;
+  height:389px;
+}
+.box .quote i{
+margin-top: 10px;
+font-size: 45px;
+color: #17c0eb
+}
+
+.box .image img{
+  height: 100%;
+  width: 100%;
+
+ margin-top: -10px;
+}
+.box p{
+ text-align: center;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .name_job{
+  margin: 10px 0 3px 0;
+text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+@media (max-width:1045px){
+  .container .box{
+  
+    margin-bottom: 20px;
+  }
+}
+@media (max-width:710px){
+  .container .box{
+    width: 100%;
+  }
+}
+#info{
+  width: 135px;
+  border: 3px solid #ffff;
+  padding: 10px;
+  text-align: center;
+
+
+}
+#info a{
+  text-decoration:none;
+}
+#info a:hover{
+  color:#5f59ab;
+}
+.form-control {
+  outline: none;
+background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+}
